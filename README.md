@@ -65,13 +65,15 @@ Return ONLY JSON, no markdown, no backticks.
 Input: { "title": "", "description": "" }
 ```
 
-## Deployment (Vercel)
+## Architecture Notes
+This project uses Next.js as a unified full-stack framework, which serves both the React frontend and the REST API routes from a single codebase. This eliminates the need for a separate Express server and simplifies deployment to a single Vercel project. MongoDB Atlas is used for persistent storage with a connection-pooling pattern optimized for serverless environments. The AI analysis is triggered synchronously on idea submission and the structured JSON report is stored alongside the idea document in MongoDB.
+
+## Improvement : Deployment for real user usecase
+
+<!-- ## Deployment (Vercel)
 
 1. Push repository to GitHub
 2. Go to [vercel.com](https://vercel.com) → Import repository
 3. Add environment variables in Vercel project settings
-4. Deploy — Vercel handles both frontend and API routes automatically
+4. Deploy — Vercel handles both frontend and API routes automatically  --!>
 
-## Architecture Notes
-
-This project uses Next.js as a unified full-stack framework, which serves both the React frontend and the REST API routes from a single codebase. This eliminates the need for a separate Express server and simplifies deployment to a single Vercel project. MongoDB Atlas is used for persistent storage with a connection-pooling pattern optimized for serverless environments. The AI analysis is triggered synchronously on idea submission and the structured JSON report is stored alongside the idea document in MongoDB.
