@@ -68,12 +68,17 @@ Input: { "title": "", "description": "" }
 ## Architecture Notes
 This project uses Next.js as a unified full-stack framework, which serves both the React frontend and the REST API routes from a single codebase. This eliminates the need for a separate Express server and simplifies deployment to a single Vercel project. MongoDB Atlas is used for persistent storage with a connection-pooling pattern optimized for serverless environments. The AI analysis is triggered synchronously on idea submission and the structured JSON report is stored alongside the idea document in MongoDB.
 
-## Improvement : Deployment for real user usecase
+## Deployment:- 
 
-<!-- ## Deployment (Vercel)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge)](https://task1-startup-validator.vercel.app/)
 
-1. Push repository to GitHub
-2. Go to [vercel.com](https://vercel.com) → Import repository
-3. Add environment variables in Vercel project settings
-4. Deploy — Vercel handles both frontend and API routes automatically  --!>
+## 🚧 Future Improvements
 
+- **User Authentication & Personal Dashboards**  
+  Add login/signup (e.g., NextAuth) so users can securely save, revisit, and manage their startup ideas and AI-generated reports.
+
+<!--
+<a href="https://task1-startup-validator.vercel.app/" target="_blank">
+  <button>🚀 Live Demo</button>
+</a>
+<!--## Deployed on Vercel : Link : https://task1-startup-validator.vercel.app/--!>
